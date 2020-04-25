@@ -6,7 +6,7 @@ function Header() {
     <div className="header flex">
       <div className="flex left-header">
         <div className="nav-item">
-          <Link>
+          <Link to="/">
             <i className="fas fa-bars"></i>
           </Link>
         </div>
