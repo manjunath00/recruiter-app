@@ -18,6 +18,7 @@ function App() {
       <div className="container">
         <Header />
         <NavigationBar />
+        <Route exact={true} path="/" component={LiveJobs} />
         <Switch>
           <Route exact={true} path="/candidates" component={Candidates} />
           <Route exact={true} path="/jobs/live" component={LiveJobs} />
