@@ -11,7 +11,7 @@ function Header() {
           </Link>
         </div>
         <div className="nav-item">
-          <Link>Logo</Link>
+          <Link to="/">Logo</Link>
         </div>
       </div>
 
