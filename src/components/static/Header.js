@@ -1,35 +1,36 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
     <div className="header flex">
       <div className="flex left-header">
         <div className="nav-item">
-          <a href="#">
+          <Link>
             <i className="fas fa-bars"></i>
-          </a>
+          </Link>
         </div>
         <div className="nav-item">
-          <a href="#">Logo</a>
+          <Link>Logo</Link>
         </div>
       </div>
 
       <div className="flex right-header">
         <div className="nav-item">
-          <a href="#">
+          <Link>
             <i className="fas fa-envelope"></i>
-          </a>
+          </Link>
         </div>
         <div className="nav-item">
-          <a href="#">
+          <Link>
             <i className="fas fa-user-friends"></i>
-          </a>
+          </Link>
         </div>
 
         <div className="nav-item">
-          <a href="#">
+          <Link>
             <i className="fas fa-user"></i>Username
-          </a>
+          </Link>
         </div>
       </div>
     </div>
