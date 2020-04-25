@@ -1,12 +1,16 @@
 import React from "react";
 import { Route, Router, Switch } from "react-router-dom";
-import { connect } from "react-redux";
 
 import history from "./history";
-import Header from "./components/Header";
-import NavigationBar from "./components/NavigationBar";
-import SideBar from "./components/SideBar";
-import Main from "./components/Main";
+import Header from "./components/static/Header";
+import NavigationBar from "./components/static/NavigationBar";
+import SideBar from "./components/static/SideBar";
+
+import LiveJobs from "./components/LiveJobs";
+import RejectedJobs from "./components/RejectedJobs";
+import AcceptedJobs from "./components/AcceptedJobs";
+import AddCandidate from "./components/AddCandidate";
+import Candidates from "./components/candidates/Candidates";
 
 function App() {
   return (
@@ -15,27 +19,15 @@ function App() {
         <Header />
         <NavigationBar />
         <Switch>
-          <Route exact={true} to="/" component={Main} />
+          <Route exact={true} path="/candidates" component={Candidates} />
+          <Route exact={true} path="/jobs/live" component={LiveJobs} />
+          <Route exact={true} path="/jobs/accepted" component={AcceptedJobs} />
           <Route
-            exact={true}
-            to="/candidates"
-            render={(props) => <Main {...props} type="liveJobs" />}
+            exact={false}
+            path="/jobs/accepted/:id"
+            component={AddCandidate}
           />
-          <Route
-            exact={true}
-            to="/jobs/live"
-            render={(props) => <Main {...props} type="liveJobs" />}
-          />
-          <Route
-            exact={true}
-            to="/jobs/accepted"
-            render={(props) => <Main {...props} type="acceptedJobs" />}
-          />
-          <Route
-            exact={true}
-            to="/jobs/rejected"
-            render={(props) => <Main {...props} type="rejectedJobs" />}
-          />
+          <Route exact={true} path="/jobs/rejected" component={RejectedJobs} />
         </Switch>
         <SideBar />
       </div>
