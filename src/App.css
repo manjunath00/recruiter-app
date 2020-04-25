@@ -62,32 +62,8 @@ body {
   border: 1px solid #000;
   padding: 0.25rem 1.5rem;
   cursor: pointer;
-  /* box-shadow:  3px 3px 5px 6px #ccc; */
   font-weight: 700;
 }
-
-/* 
-<script src="https://kit.fontawesome.com/79202defb2.js" crossorigin="anonymous"></script>
-
-<i class="fas fa-envelope"></i>
-<i class="fas fa-user"></i>
-<i class="fas fa-user-friends"></i>
-<i class="fas fa-image"></i>
-<i class="fas fa-id-card"></i>
-<i class="fas fa-suitcase"></i>
-<i class="far fa-calendar-alt"></i>
-<i class="fas fa-users"></i>
-<i class="fas fa-money-check-alt"></i>
-<i class="fas fa-search"></i>
-<i class="fas fa-filter"></i>
-<i class="fas fa-sort"></i>
-<i class="fas fa-backward"></i>
-<i class="fas fa-forward"></i>
-<i class="fas fa-trash"></i>
-<i class="fas fa-bars"></i>
-
-
-*/
 
 .container {
   margin: 0 auto;
@@ -103,11 +79,6 @@ body {
   left: 0;
   right: 1rem;
   left: 1rem;
-  /* margin-left: 0.5rem; */
-}
-
-.header * {
-  /* border: 1px solid #000; */
 }
 
 .nav-item {
@@ -117,10 +88,8 @@ body {
 .main {
   display: grid;
   width: 85%;
-  /* grid-template-columns: 200px auto 50px; */
   padding-top: 1rem;
   margin-left: 15%;
-  /* border: 1px solid #000; */
 }
 
 /* nav bar */
@@ -236,10 +205,6 @@ div.article-numbers div:first-child {
 
 /* responsive style */
 @media screen and (max-width: 992px) {
-  .header {
-    /* height: 12vh;  */
-  }
-
   .nav-item {
     padding: 0.25rem;
   }
@@ -262,7 +227,6 @@ div.article-numbers div:first-child {
 @media screen and (max-width: 600px) {
   .header {
     height: 12vh;
-    /* padding: 0.25rem; */
   }
 
   .nav-item {
